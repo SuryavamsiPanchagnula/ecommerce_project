@@ -21,7 +21,7 @@ public class tc03_signup extends base_page {
 	@DataProvider(name = "signupData")
 	public Object[][] accountDataProvider() {
 	    return new Object[][]{
-	        {"test", "user", "abc23@gmail.com", "Vamsi@2000", "Vamsi@2000", "9347812056", "//strong[text()='Sorry, there was a problem creating your account.']", "Expected Message"}
+	        {"test", "user", "abcdef@gmail.com", "Vamsi@2000", "Vamsi@2000", "9347812054", "//strong[text()='Sorry, there was a problem creating your account.']", "Expected Message"}
 	    };
 	}
 	@Test(dataProvider ="signupData")

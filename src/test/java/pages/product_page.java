@@ -17,7 +17,7 @@ public class product_page extends base_page {
 	@FindBy(xpath="//span[contains(text(),'Cart')]")
 	private WebElement CartButton;
 	
-	@FindBy(xpath="//button[@data-sku-id='6578579']")
+	@FindBy(xpath="//button[@data-sku-id='6578580']")
 	private WebElement ADD_SonyTV_through_Department;
 	
 	@FindBy(xpath="//p[contains(text(),'ThinkPad laptops')]")
