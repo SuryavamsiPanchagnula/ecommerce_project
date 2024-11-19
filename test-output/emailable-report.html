@@ -8,79 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Automation Suite</th></tr>
-<tr><td><a href="#t0">BestBuyTest</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">695,127</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">43,073</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BestBuyTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.tc03_signup</td><td><a href="#m0">tc03_validateCreatAccountFunctionality</a></td><td rowspan="1">1732027109894</td><td rowspan="1">150375</td></tr><tr class="failedodd"><td rowspan="1">testcases.tc04_signin</td><td><a href="#m1">tc04_SignInFunctionality</a></td><td rowspan="1">1732027265342</td><td rowspan="1">74864</td></tr><tr><th colspan="4">BestBuyTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.tc01_open_website</td><td><a href="#m2">tc01_navigate_to_website</a></td><td rowspan="1">1732027074385</td><td rowspan="1">3482</td></tr><tr class="passedodd"><td rowspan="1">testcases.tc02_URL_validation</td><td><a href="#m3">tc02_validateUrlIsNotBroken</a></td><td rowspan="1">1732027081393</td><td rowspan="1">23746</td></tr><tr class="passedeven"><td rowspan="1">testcases.tc05_menu_validation</td><td><a href="#m4">tc05_validateMenuLinkNavigation</a></td><td rowspan="1">1732027344455</td><td rowspan="1">150843</td></tr><tr class="passedodd"><td rowspan="1">testcases.tc06_bottom_links_validation</td><td><a href="#m5">tc06_validateLinkInBottomOfHomePage</a></td><td rowspan="1">1732027498514</td><td rowspan="1">21124</td></tr><tr class="passedeven"><td rowspan="1">testcases.tc07_Search_Product</td><td><a href="#m6">tc07_SearchAddItemInCart</a></td><td rowspan="1">1732027522704</td><td rowspan="1">50022</td></tr><tr class="passedodd"><td rowspan="1">testcases.tc08_Department_Item_Add</td><td><a href="#m7">tc08_selAddItemShopByDeptMenu</a></td><td rowspan="1">1732027576365</td><td rowspan="1">43828</td></tr><tr class="passedeven"><td rowspan="1">testcases.tc09_Brand_Item_Add</td><td><a href="#m8">tc09_selAddItemShopByDeptMenu</a></td><td rowspan="1">1732027632674</td><td rowspan="1">50663</td></tr><tr class="passedodd"><td rowspan="1">testcases.tc10_checkout</td><td><a href="#m9">tc10_CheckOutPageFilling</a></td><td rowspan="1">1732027687474</td><td rowspan="1">76621</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.tc08_Department_Item_Add</td><td><a href="#m0">tc08_selAddItemShopByDeptMenu</a></td><td rowspan="1">1732044709406</td><td rowspan="1">37745</td></tr></tbody>
 </table>
-<h2>BestBuyTest</h2><h3 id="m0">testcases.tc03_signup#tc03_validateCreatAccountFunctionality</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>test</td><td>user</td><td>abc23@gmail.com</td><td>Vamsi@2000</td><td>Vamsi@2000</td><td>9347812056</td><td>//strong[text()=&apos;Sorry, there was a problem creating your account.&apos;]</td><td>Expected Message</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;Account&apos;)]&apos; (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at actions.actions.waitExplicit(actions.java:94)
-	at actions.actions.clickOn(actions.java:97)
-	at pages.homepage.goToCreatAccount(homepage.java:88)
-	at testcases.tc03_signup.tc03_validateCreatAccountFunctionality(tc03_signup.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Account&apos;)]&quot;}
-  (Session info: chrome=131.0.6778.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe8124a6e726905c7332112f9c419442, findElement {value=//span[contains(text(),&apos;Account&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55669/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fe8124a6e726905c7332112f9c419442
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 30 more
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.tc04_signin#tc04_SignInFunctionality</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>psuryavamsi88@gmail.com</td><td>Vamsi@2000</td><td>//div[contains(text(),&apos;Oops! The email or password did not match our records. Please try again.&apos;)]</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Oops! The email or password did not match our records. Please try again.&apos;)]&quot;}
-  (Session info: chrome=131.0.6778.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c04002f999e651be47b4e1e8548652da, findElement {value=//div[contains(text(),&apos;Oops! The email or password did not match our records. Please try again.&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55813}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55813/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c04002f999e651be47b4e1e8548652da
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pages.sign_in_page.signInFunctionality(sign_in_page.java:29)
-	at testcases.tc04_signin.tc04_SignInFunctionality(tc04_signin.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.tc01_open_website#tc01_navigate_to_website</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.tc02_URL_validation#tc02_validateUrlIsNotBroken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.tc05_menu_validation#tc05_validateMenuLinkNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testcases.tc06_bottom_links_validation#tc06_validateLinkInBottomOfHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testcases.tc07_Search_Product#tc07_SearchAddItemInCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testcases.tc08_Department_Item_Add#tc08_selAddItemShopByDeptMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testcases.tc09_Brand_Item_Add#tc09_selAddItemShopByDeptMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testcases.tc10_checkout#tc10_CheckOutPageFilling</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">testcases.tc08_Department_Item_Add#tc08_selAddItemShopByDeptMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

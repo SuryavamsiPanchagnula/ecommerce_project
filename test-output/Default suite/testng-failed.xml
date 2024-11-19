@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.tc04_signin">
+      <class name="testcases.tc08_Department_Item_Add">
         <methods>
-          <include name="setup"/>
           <include name="testDetails"/>
+          <include name="setup"/>
           <include name="start"/>
           <include name="close"/>
           <include name="endReport"/>
-          <include name="tc04_SignInFunctionality" invocation-numbers="0"/>
+          <include name="tc08_selAddItemShopByDeptMenu"/>
           <include name="startReport"/>
         </methods>
-      </class> <!-- testcases.tc04_signin -->
+      </class> <!-- testcases.tc08_Department_Item_Add -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

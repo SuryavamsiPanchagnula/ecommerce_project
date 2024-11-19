@@ -17,8 +17,8 @@ public class product_page extends base_page {
 	@FindBy(xpath="//span[contains(text(),'Cart')]")
 	private WebElement CartButton;
 	
-	@FindBy(xpath="//button[@data-sku-id='6578580']")
-	private WebElement ADD_SonyTV_through_Department;
+	@FindBy(xpath="//button[contains(text(),'Add to Cart')]")
+	private List<WebElement> ADD_SonyTV_through_Department;
 	
 	@FindBy(xpath="//p[contains(text(),'ThinkPad laptops')]")
 	private WebElement thinkpad_laptop;
@@ -43,9 +43,9 @@ public class product_page extends base_page {
 	}
 	
 	public String add_Department_TV() {
-		String TV_At_Product_Page = extractText(ADD_SonyTV_through_Department);
-		jsScrollUntillElement(ADD_SonyTV_through_Department);
-		jsClickOn(ADD_SonyTV_through_Department);
+		String TV_At_Product_Page = extractText(ADD_SonyTV_through_Department.get(0));
+		jsScrollUntillElement(ADD_SonyTV_through_Department.get(0));
+		jsClickOn(ADD_SonyTV_through_Department.get(0));
 		clickOn(CartButton);
 		return TV_At_Product_Page;
 	}
