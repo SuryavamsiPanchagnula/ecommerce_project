@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-19T20:07:49 IST" name="Automation Suite" finished-at="2024-11-19T20:19:24 IST" duration-ms="695127">
+    <groups>
+    </groups>
+    <test started-at="2024-11-19T20:07:49 IST" name="BestBuyTest" finished-at="2024-11-19T20:19:24 IST" duration-ms="695127">
+      <class name="testcases.tc02_URL_validation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc02_URL_validation@1190200a]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc02_URL_validation@1190200a]" started-at="2024-11-19T20:07:58 IST" name="testDetails" finished-at="2024-11-19T20:07:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc02_URL_validation@1190200a]" started-at="2024-11-19T20:07:58 IST" name="start" finished-at="2024-11-19T20:08:01 IST" duration-ms="3302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc02_validateUrlIsNotBroken()[pri:2, instance:testcases.tc02_URL_validation@1190200a]" started-at="2024-11-19T20:08:01 IST" name="tc02_validateUrlIsNotBroken" finished-at="2024-11-19T20:08:25 IST" duration-ms="23746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_validateUrlIsNotBroken -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc02_URL_validation@1190200a]" started-at="2024-11-19T20:08:25 IST" name="close" finished-at="2024-11-19T20:08:25 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc02_URL_validation -->
+      <class name="testcases.tc03_signup">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc03_signup@6a2f6f80]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc03_signup@6a2f6f80]" started-at="2024-11-19T20:08:25 IST" name="testDetails" finished-at="2024-11-19T20:08:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc03_signup@6a2f6f80]" started-at="2024-11-19T20:08:25 IST" name="start" finished-at="2024-11-19T20:08:29 IST" duration-ms="4488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc03_validateCreatAccountFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.tc03_signup@6a2f6f80]" started-at="2024-11-19T20:08:29 IST" name="tc03_validateCreatAccountFunctionality" data-provider="signupData" finished-at="2024-11-19T20:11:00 IST" duration-ms="150375" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc23@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Vamsi@2000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Vamsi@2000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9347812056]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[//strong[text()='Sorry, there was a problem creating your account.']]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Expected Message]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[contains(text(),'Account')]' (tried for 15 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[contains(text(),'Account')]' (tried for 15 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at actions.actions.waitExplicit(actions.java:94)
+at actions.actions.clickOn(actions.java:97)
+at pages.homepage.goToCreatAccount(homepage.java:88)
+at testcases.tc03_signup.tc03_validateCreatAccountFunctionality(tc03_signup.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Account')]"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe8124a6e726905c7332112f9c419442, findElement {value=//span[contains(text(),'Account')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55669/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe8124a6e726905c7332112f9c419442
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_validateCreatAccountFunctionality -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc03_signup@6a2f6f80]" started-at="2024-11-19T20:11:00 IST" name="close" finished-at="2024-11-19T20:11:00 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc03_signup -->
+      <class name="testcases.tc07_Search_Product">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc07_Search_Product@385e9564]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc07_Search_Product@385e9564]" started-at="2024-11-19T20:15:19 IST" name="testDetails" finished-at="2024-11-19T20:15:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc07_Search_Product@385e9564]" started-at="2024-11-19T20:15:19 IST" name="start" finished-at="2024-11-19T20:15:22 IST" duration-ms="2737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc07_SearchAddItemInCart()[pri:0, instance:testcases.tc07_Search_Product@385e9564]" started-at="2024-11-19T20:15:22 IST" name="tc07_SearchAddItemInCart" finished-at="2024-11-19T20:16:12 IST" duration-ms="50022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc07_SearchAddItemInCart -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc07_Search_Product@385e9564]" started-at="2024-11-19T20:16:12 IST" name="close" finished-at="2024-11-19T20:16:13 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc07_Search_Product -->
+      <class name="testcases.tc04_signin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc04_signin@45b4c3a9]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc04_signin@45b4c3a9]" started-at="2024-11-19T20:11:00 IST" name="testDetails" finished-at="2024-11-19T20:11:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc04_signin@45b4c3a9]" started-at="2024-11-19T20:11:00 IST" name="start" finished-at="2024-11-19T20:11:05 IST" duration-ms="4798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc04_SignInFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.tc04_signin@45b4c3a9]" started-at="2024-11-19T20:11:05 IST" name="tc04_SignInFunctionality" data-provider="signinData" finished-at="2024-11-19T20:12:20 IST" duration-ms="74864" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[psuryavamsi88@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vamsi@2000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//div[contains(text(),'Oops! The email or password did not match our records. Please try again.')]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Oops! The email or password did not match our records. Please try again.')]"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c04002f999e651be47b4e1e8548652da, findElement {value=//div[contains(text(),'Oops! The email or password did not match our records. Please try again.')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55813}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55813/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c04002f999e651be47b4e1e8548652da]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Oops! The email or password did not match our records. Please try again.')]"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c04002f999e651be47b4e1e8548652da, findElement {value=//div[contains(text(),'Oops! The email or password did not match our records. Please try again.')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55813}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55813/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c04002f999e651be47b4e1e8548652da
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.sign_in_page.signInFunctionality(sign_in_page.java:29)
+at testcases.tc04_signin.tc04_SignInFunctionality(tc04_signin.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_SignInFunctionality -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc04_signin@45b4c3a9]" started-at="2024-11-19T20:12:20 IST" name="close" finished-at="2024-11-19T20:12:20 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc04_signin -->
+      <class name="testcases.tc06_bottom_links_validation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc06_bottom_links_validation@291caca8]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc06_bottom_links_validation@291caca8]" started-at="2024-11-19T20:14:55 IST" name="start" finished-at="2024-11-19T20:14:58 IST" duration-ms="2841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc06_bottom_links_validation@291caca8]" started-at="2024-11-19T20:14:55 IST" name="testDetails" finished-at="2024-11-19T20:14:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method signature="tc06_validateLinkInBottomOfHomePage()[pri:0, instance:testcases.tc06_bottom_links_validation@291caca8]" started-at="2024-11-19T20:14:58 IST" name="tc06_validateLinkInBottomOfHomePage" finished-at="2024-11-19T20:15:19 IST" duration-ms="21124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc06_validateLinkInBottomOfHomePage -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc06_bottom_links_validation@291caca8]" started-at="2024-11-19T20:15:19 IST" name="close" finished-at="2024-11-19T20:15:19 IST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc06_bottom_links_validation -->
+      <class name="testcases.tc05_menu_validation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc05_menu_validation@399c4be1]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc05_menu_validation@399c4be1]" started-at="2024-11-19T20:12:20 IST" name="testDetails" finished-at="2024-11-19T20:12:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc05_menu_validation@399c4be1]" started-at="2024-11-19T20:12:20 IST" name="start" finished-at="2024-11-19T20:12:24 IST" duration-ms="3862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc05_validateMenuLinkNavigation()[pri:0, instance:testcases.tc05_menu_validation@399c4be1]" started-at="2024-11-19T20:12:24 IST" name="tc05_validateMenuLinkNavigation" finished-at="2024-11-19T20:14:55 IST" duration-ms="150843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_validateMenuLinkNavigation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc05_menu_validation@399c4be1]" started-at="2024-11-19T20:14:55 IST" name="close" finished-at="2024-11-19T20:14:55 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc05_menu_validation -->
+      <class name="testcases.tc01_open_website">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:testcases.tc01_open_website@4961f6af]" started-at="2024-11-19T20:07:49 IST" name="startReport" finished-at="2024-11-19T20:07:49 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc01_open_website@4961f6af]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc01_open_website@4961f6af]" started-at="2024-11-19T20:07:49 IST" name="testDetails" finished-at="2024-11-19T20:07:49 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc01_open_website@4961f6af]" started-at="2024-11-19T20:07:49 IST" name="start" finished-at="2024-11-19T20:07:54 IST" duration-ms="4955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc01_navigate_to_website()[pri:0, instance:testcases.tc01_open_website@4961f6af]" started-at="2024-11-19T20:07:54 IST" name="tc01_navigate_to_website" finished-at="2024-11-19T20:07:57 IST" duration-ms="3482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_navigate_to_website -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc01_open_website@4961f6af]" started-at="2024-11-19T20:07:57 IST" name="close" finished-at="2024-11-19T20:07:58 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.tc01_open_website@4961f6af]" started-at="2024-11-19T20:19:24 IST" name="endReport" finished-at="2024-11-19T20:19:24 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- testcases.tc01_open_website -->
+      <class name="testcases.tc10_checkout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc10_checkout@4c39bec8]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc10_checkout@4c39bec8]" started-at="2024-11-19T20:18:03 IST" name="testDetails" finished-at="2024-11-19T20:18:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc10_checkout@4c39bec8]" started-at="2024-11-19T20:18:03 IST" name="start" finished-at="2024-11-19T20:18:07 IST" duration-ms="3779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc10_CheckOutPageFilling()[pri:0, instance:testcases.tc10_checkout@4c39bec8]" started-at="2024-11-19T20:18:07 IST" name="tc10_CheckOutPageFilling" finished-at="2024-11-19T20:19:24 IST" duration-ms="76621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc10_CheckOutPageFilling -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc10_checkout@4c39bec8]" started-at="2024-11-19T20:19:24 IST" name="close" finished-at="2024-11-19T20:19:24 IST" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc10_checkout -->
+      <class name="testcases.tc08_Department_Item_Add">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc08_Department_Item_Add@5b94b04d]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc08_Department_Item_Add@5b94b04d]" started-at="2024-11-19T20:16:13 IST" name="testDetails" finished-at="2024-11-19T20:16:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc08_Department_Item_Add@5b94b04d]" started-at="2024-11-19T20:16:13 IST" name="start" finished-at="2024-11-19T20:16:16 IST" duration-ms="3215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc08_selAddItemShopByDeptMenu()[pri:0, instance:testcases.tc08_Department_Item_Add@5b94b04d]" started-at="2024-11-19T20:16:16 IST" name="tc08_selAddItemShopByDeptMenu" finished-at="2024-11-19T20:17:00 IST" duration-ms="43828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc08_selAddItemShopByDeptMenu -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc08_Department_Item_Add@5b94b04d]" started-at="2024-11-19T20:17:00 IST" name="close" finished-at="2024-11-19T20:17:00 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc08_Department_Item_Add -->
+      <class name="testcases.tc09_Brand_Item_Add">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.tc09_Brand_Item_Add@8c3b9d]" started-at="2024-11-19T20:07:49 IST" name="setup" finished-at="2024-11-19T20:07:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:testcases.tc09_Brand_Item_Add@8c3b9d]" started-at="2024-11-19T20:17:00 IST" name="testDetails" finished-at="2024-11-19T20:17:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="start()[pri:0, instance:testcases.tc09_Brand_Item_Add@8c3b9d]" started-at="2024-11-19T20:17:00 IST" name="start" finished-at="2024-11-19T20:17:12 IST" duration-ms="12129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="tc09_selAddItemShopByDeptMenu()[pri:0, instance:testcases.tc09_Brand_Item_Add@8c3b9d]" started-at="2024-11-19T20:17:12 IST" name="tc09_selAddItemShopByDeptMenu" finished-at="2024-11-19T20:18:03 IST" duration-ms="50663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc09_selAddItemShopByDeptMenu -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.tc09_Brand_Item_Add@8c3b9d]" started-at="2024-11-19T20:18:03 IST" name="close" finished-at="2024-11-19T20:18:03 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.tc09_Brand_Item_Add -->
+    </test> <!-- BestBuyTest -->
+  </suite> <!-- Automation Suite -->
+</testng-results>
